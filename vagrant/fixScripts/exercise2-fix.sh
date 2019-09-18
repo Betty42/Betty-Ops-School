@@ -1,2 +1,4 @@
 #!/bin/bash
-#add fix to exercise2 here
+
+vagrant ssh server1 -- -t "sudo sed -i '/ud127.0.0.1 www.ascii-art.de/d' /etc/hosts"
+sudo sed -i '/www.ascii-art.de/d' /etc/hosts
